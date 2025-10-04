@@ -1,2 +1,2 @@
 # Meu-projeto
-site pessoal de projetos pessoais
+site de projetos pessoais
