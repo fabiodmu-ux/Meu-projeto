@@ -52,8 +52,7 @@
 
   <nav>
     <a href="index.html">Início</a>
-    <a href="Tabela.html">Tabela de Preços</a>
-    <a href="sobre.html">Sobre Nós</a>
+        <a href="sobre.html">Sobre Nós</a>
     <a href="contato.html">Contato</a>
   </nav>
 
