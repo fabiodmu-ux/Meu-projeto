@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação - ONG Defenda o Hamster</title>
+    
+    <style>
+        /* Estilos base (Reutilizados) */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #e6e6e6; color: #333; }
+        header { background-color: #f39c12; color: white; padding: 40px 0; text-align: center; }
+        
+        /* Estilos de Navegação (Para links de largura igual) */
+        nav { 
+            background-color: white; 
+            display: flex; 
+            justify-content: center; 
+            padding: 0; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        nav a { 
+            color: #f39c12; 
+            text-decoration: none; 
+            padding: 15px 10px; 
+            margin: 0; 
+            font-weight: bold; 
+            text-align: center; 
+            flex-grow: 1; 
+            display: block; 
+        }
+        nav a:hover { 
+            background-color: #ffe5b4; 
+            border-radius: 0; 
+        }
+
+        /* Layout do Conteúdo Principal para centralizar */
+        .container { 
+            margin: 40px auto; 
+            max-width: 700px; /* Um pouco mais estreito para focar na doação */
+            padding: 20px 40px; 
+            background-color: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+            text-align: center;
+        }
+
+        h2 { 
+            color: #d35400; 
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* Estilos do Formulário de Doação */
+        .opcoes-valor {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
+        .btn-valor {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            flex-grow: 1;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-valor:hover {
+            background-color: #2ecc71;
+        }
+
+        .input-outro-valor {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .btn-finalizar {
+            background-color: #f39c12; /* Cor da marca */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn-finalizar:hover {
+            background-color: #e67e22;
+        }
+        
+        /* Estilo do Rodapé */
+        footer { background-color: #f39c12; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sua Doação Salva Vidas</h1>
+        <p>Cada pequeno valor garante a saúde e o lar de um hamster.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="projeto.html">Nosso Projeto</a>
+        <a href="voluntarios.html">Voluntários</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Escolha o Valor da Sua Contribuição</h2>
+        
+        <p>Selecione um valor ou insira uma quantia personalizada. Sua doação é 100% destinada ao resgate, alimentação e tratamento veterinário.</p>
+
+        <div class="opcoes-valor">
+            <button class="btn-valor">R$ 20</button>
+            <button class="btn-valor">R$ 50</button>
+            <button class="btn-valor">R$ 100</button>
+        </div>
+        
+        <label for="outro_valor" style="display: block; margin-bottom: 10px; font-weight: bold;">Ou insira outro valor:</label>
+        <input type="number" id="outro_valor" class="input-outro-valor" placeholder="Ex: 75.00" min="5">
+        
+        <p style="font-style: italic; color: #555;">Você está prestes a garantir um dia de comida e substrato limpo para um hamster.</p>
+
+        <div style="border-top: 1px solid #eee; padding-top: 20px; margin-top: 30px;">
+            <h3>Métodos de Pagamento (Simulação)</h3>
+            <p><strong>PIX:</strong> Chave (CNPJ da ONG) - Envie-nos o comprovante por e-mail!</p>
+            <p><strong>Cartão de Crédito:</strong> (Opção de doação mensal)</p>
+            
+            <button class="btn-finalizar" onclick="alert('Doação simulada! Em um site real, você seria redirecionado para o pagamento.')">
+                FINALIZAR DOAÇÃO
+            </button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ONG Defenda o Hamster | A sua ajuda faz a diferença.</p>
+    </footer>
+
+</body>
+</html>
